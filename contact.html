@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact What I Love</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <form>
+        <label for="Full-name">Full Name:</label>
+        <input type="text" id="Full-name" name="name" placeholder="Enter Your Full Name" required>
+
+        <label for="Phones-owned">How Many Phones Have You Owned</label>
+        <input type="number" id="Phones-owned" name="phones owned">
+
+        <label>Theme choice:</label>
+        <label for="android">Team Android</label>
+
+        <input type="radio" id="android" name="theme choice" value="Android">
+        <label for="iOS">iOS</label>
+        <input type="radio" id="iOS" name="theme choice" value="iOS">
+
+        <fieldset>
+            <legend>What interests you about phones?</legend>
+
+            <label for="cameras">Cameras</label>
+            <input type="checkbox" id="cameras" name="interests" value="cameras">
+
+            <label for="performance">Performance</label>
+            <input type="checkbox" id="performance" name="interests" value="performance">
+
+            <label for="design">Design</label>
+            <input type="checkbox" id="design" name="interests" value="design">
+
+            <label for="software">Software</label>
+            <input type="checkbox" id="software" name="interests" value="software">
+        </fieldset>
+
+        <label for="rating">How Obsessed Are You With Phones?1-10</label>
+        <input type="range" id="rating" name="rating"  min="1" max="10" step="1" value="5">
+
+        <label for="feedback">Have a Phone Story I Should Add?</label>
+        <textarea id="feedback" name="message" rows="8" cols="60" placeholder="Tell me about it...."></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
