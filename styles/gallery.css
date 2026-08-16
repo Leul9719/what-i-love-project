@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@ h1, h2, h3{
 
 header {
     background: linear-gradient(to right, #0f2027, #2c5364);
-    padding: 1rem, 2rem;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -27,9 +29,10 @@ header {
 nav a{
     color: #ffffff;
     text-decoration: none;
-    margin-right: 1,5rem;
+    margin-right: 1.5rem;
     font-weight: 500;
 }
+
 
 section{
     padding: 3rem 2rem;
@@ -56,7 +59,7 @@ section p:last-child{
 }
 
 .gallery-item{
-    background-color: #ffffff;
+    background-color: #c3b2b2;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 2rem;
@@ -96,11 +99,14 @@ section p:last-child{
     border-radius: 6px;
     margin-bottom: 1rem;
 }
+
+
 table{
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
 }
+
 
 th, td{
     padding: 0.75rem 1rem;
