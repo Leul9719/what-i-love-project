@@ -24,6 +24,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav a{
@@ -31,8 +35,82 @@ nav a{
     text-decoration: none;
     margin-right: 1.5rem;
     font-weight: 500;
+    position: relative;
 }
 
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #4dd0e1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    section p {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
 
 section{
     padding: 3rem 2rem;
