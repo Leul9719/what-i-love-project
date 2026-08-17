@@ -130,6 +130,69 @@ h2 + ul li{
     margin-bottom: 0.6rem;
 }
 
+blockquote {
+    font-size: 1.4rem;
+    font-family: 'Space Grotesk', sans-serif;
+    border-left: 4px solid #2c5364;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    color: #2c5364;
+    font-style: italic;
+}
+
+ul li::before {
+    content: '📱 ';
+}
+ul {
+    list-style: none;
+}
+
+ul li:hover {
+    color: #2c5364;
+    transform: translateX(4px);
+    transition: all 0.2s ease;
+}
+
+
+.story-highlight {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #2c5364;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+@media screen and (max-width: 600px) {
+    .story-highlight {
+        flex-direction: column;
+    }
+}
+
 footer{
     background-color: #0f2027;
     color: #ffffff;
