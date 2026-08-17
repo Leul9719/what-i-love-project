@@ -26,6 +26,10 @@ header {
     flex-wrap: wrap;
 }
 
+header {
+  justify-content: space-between;
+}
+
 .nav-toggle {
     display: none;
 }
@@ -62,26 +66,41 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+.site-title {
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 #Hero{
-    background-image: url(../images/hero-bg2.png);
-    background-size:cover;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding: 6rem 2rem;
-    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+    text-align: left;
+}
 }
 
 #Hero h1{
     font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    max-width: 650px;
+
 }
 
-#Hero p{
+#Hero p {
     font-size: 1.1rem;
-    max-width: 700px;
-    margin: 1.5rem auto 0;
+    max-width: 550px;
+    margin-top: 1.5rem;
+    text-align: left;
 }
 
 #Hero {
@@ -162,12 +181,19 @@ nav a:hover::after {
     display: block;
     }
 
+    #Hero {
+        text-align: center;
+        align-items: center;
+        padding: 3rem 1.5rem;
+    }
+
     #Hero h1 {
         font-size: 1.75rem;
     }
 
     #Hero p {
         font-size: 1rem;
+        text-align: center;
     }
 
     .preview {
