@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery What I Love</title>
     <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -36,9 +39,45 @@
             classic flip-phone idea into the smartphone era.
         </p>
     </section>
+
+    <section>
+        <h2>At A Glance</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Phone</th>
+                    <th>Year Of production</th>
+                    <th>What Happened</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Galaxy Note 7</td>
+                    <td>2014</td>
+                    <td>Batter fires lead to recall</td>
+                </tr>
+                <tr>
+                    <td>iPhone 6</td>
+                    <td>2014</td>
+                    <td>"Bendgate"</td>
+                </tr>
+                <tr>
+                    <td>Galaxy Z Fold</td>
+                    <td>2019</td>
+                    <td>First foldable</td>
+                </tr>
+                <tr>
+                    <td>Galaxy Z Flip</td>
+                    <td>2020</td>
+                    <td>Revived flip-phone design with a modern screen</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <section class="gallery-grid">
         <div class="gallery-item">
             <h3>Galaxy Note 7</h3>
+            <img src="images/note7.jpg" alt="Samsung Galaxy Note 7">
             <p>
                 The Galaxy Note 7 was supposed to be one of Samsung's biggest
                 flagship releases of 2016. But shortly after its launch, reports
@@ -69,10 +108,14 @@
                 showcase Samsung's technology had become one of the most infamous
                 phone failures in history.
             </p>
+
+            <a href="https://www.youtube.com/watch?v=CSB93veNiC0" target="_blank" title="Watch on YouTube">Watch the story →</a>
         </div>
 
         <div class="gallery-item">
             <h3>iPhone 6</h3>
+            <img src="images/iPhone-6.jpg" alt="iPhone 6">
+            
             <p>
                 When Apple introduced the iPhone 6 and iPhone 6 Plus in 2014, 
                 the phones were a major change from previous iPhones. They were 
@@ -108,10 +151,13 @@
                 into one of the most memorable smartphones of its generation  not just for what it 
                 introduced, but for the fact that people discovered it could bend.
             </p>
+
+            <a href="https://www.youtube.com/watch?v=znK652H6yQM" target="_blank" title="Watch on YouTube">Watch the story</a>
         </div>
 
         <div class="gallery-item">
             <h3>Galaxy  Fold</h3>
+            <img src="images/samsung-galaxy-fold-7.jpg" alt="Galaxy Z Fold">
             <p>
                 For years, smartphone screens had been getting bigger. But Samsung
                 decided to ask a completely different question: what if the screen
@@ -134,10 +180,13 @@
                 seen. It wasn't just a phone with a bigger screen  the phone
                 itself could change shape.
             </p>
+
+            <a href="https://www.youtube.com/watch?v=6C_4Bz62b0E" target="_blank" title="Watch on YouTube">Watch the story</a>
         </div>
         
         <div class="gallery-item">
             <h3>Galaxy Z Flip</h3>
+            <img src="images/Galaxy_Z_Flip_5G.jpg" alt="Galaxy Z Flip">
             <p>
                 Samsung didn't stop at making a phone that unfolds into a tablet.
                 The company took the idea in the opposite direction.
@@ -169,7 +218,15 @@
                 portable, and completely different from the smartphones people
                 were used to.
             </p>
+
+            <a href="https://www.youtube.com/watch?v=Y7qTp9J74RA" target="_blank" title="Watch on YouTube">Watch the story</a>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2026 Leul. All rights reserved</p>
+        <a href="https://t.me/leeeeeul" target="_blank" title="Message me on telegram"><i class="fa-brands fa-telegram"></i>Telegram</a>
+        <a href="https://github.com/Leul9719" target="_blank" title="check out my GitHub"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="mailto:lmekonnen793@gmail.com" title="Email me"><i class="fa-solid fa-envelope"></i>Email</a>
+    </footer>
 </body>
 </html>
