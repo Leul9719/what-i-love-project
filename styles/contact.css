@@ -25,6 +25,10 @@ header {
     flex-wrap: wrap;
 }
 
+header {
+    justify-content: space-between;
+}
+
 nav a{
     color: #ffffff;
     text-decoration: none;
@@ -61,6 +65,15 @@ nav a:hover::after {
     font-size: 1.8rem;
     color: #ffffff;
 }
+
+.site-title {
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 1024px) {
     form {
