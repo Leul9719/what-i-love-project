@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact What I Love</title>
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -16,43 +19,53 @@
         </nav>
     </header>
     <form>
-        <label for="Full-name">Full Name:</label>
-        <input type="text" id="Full-name" name="name" placeholder="Enter Your Full Name" required>
+        <div class="form-group">
+            <label for="Full-name">Full Name:</label>
+            <input type="text" id="Full-name" name="name" placeholder="Enter Your Full Name" required>
+        
+        
 
-        <label for="Phones-owned">How Many Phones Have You Owned</label>
-        <input type="number" id="Phones-owned" name="phones owned">
+            <label for="Phones-owned">How Many Phones Have You Owned</label>
+            <input type="number" id="Phones-owned" name="phones owned">
 
-        <label>Theme choice:</label>
-        <label for="android">Team Android</label>
+            <label>Theme choice:</label>
+            <label for="android">Team Android</label>
 
-        <input type="radio" id="android" name="theme choice" value="Android">
-        <label for="iOS">iOS</label>
-        <input type="radio" id="iOS" name="theme choice" value="iOS">
+            <input type="radio" id="android" name="theme choice" value="Android">
+            <label for="iOS">iOS</label>
+            <input type="radio" id="iOS" name="theme choice" value="iOS">
 
-        <fieldset>
-            <legend>What interests you about phones?</legend>
+            <fieldset>
+                <legend>What interests you about phones?</legend>
 
-            <label for="cameras">Cameras</label>
-            <input type="checkbox" id="cameras" name="interests" value="cameras">
+                <label for="cameras">Cameras</label>
+                <input type="checkbox" id="cameras" name="interests" value="cameras">
 
-            <label for="performance">Performance</label>
-            <input type="checkbox" id="performance" name="interests" value="performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="performance" name="interests" value="performance">
 
-            <label for="design">Design</label>
-            <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="design" name="interests" value="design">
 
-            <label for="software">Software</label>
-            <input type="checkbox" id="software" name="interests" value="software">
-        </fieldset>
+                <label for="software">Software</label>
+                <input type="checkbox" id="software" name="interests" value="software">
+            </fieldset>
 
-        <label for="rating">How Obsessed Are You With Phones?1-10</label>
-        <input type="range" id="rating" name="rating"  min="1" max="10" step="1" value="5">
+            <label for="rating">How Obsessed Are You With Phones?1-10</label>
+            <input type="range" id="rating" name="rating"  min="1" max="10" step="1" value="5">
 
-        <label for="feedback">Have a Phone Story I Should Add?</label>
-        <textarea id="feedback" name="message" rows="8" cols="60" placeholder="Tell me about it...."></textarea>
+            <label for="feedback">Have a Phone Story I Should Add?</label>
+            <textarea id="feedback" name="message" rows="8" cols="60" placeholder="Tell me about it...."></textarea>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+    </div>
     </form>
+    <footer>
+        <p>&copy; 2026 Leul. All rights reserved</p>
+        <a href="https://t.me/leeeeeul" target="_blank" title="Message me on telegram">Telegram</a>
+        <a href="https://github.com/Leul9719" target="_blank" title="check out my GitHub">GitHub</a>
+        <a href="mailto:lmekonnen793@gmail.com" title="Email me">Email</a>
+    </footer>
 </body>
 </html>
