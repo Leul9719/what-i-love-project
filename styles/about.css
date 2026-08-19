@@ -81,40 +81,7 @@ nav a:hover::after {
 }
 
 
-@media screen and (max-width: 1024px) {
-    section {
-        padding: 2.5rem 1.5rem;
-    }
 
-    section p {
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header {
-        justify-content: space-between;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .nav-toggle:checked ~ nav {
-        display: flex;
-    }
-
-    section {
-        padding: 2rem 1.5rem;
-    }
-}
 
 section{
     padding: 3rem 2rem;
@@ -204,11 +171,48 @@ ul li:hover {
 }
 
 
+
+
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    section p {
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-toggle:checked ~ nav {
+        display: flex;
+    }
+
     .story-highlight {
         flex-direction: column;
     }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
 }
+
 
 footer{
     background-color: #0f2027;
