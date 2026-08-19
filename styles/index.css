@@ -21,14 +21,11 @@ header {
     top: 0;
     z-index: 10;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-header {
-  justify-content: space-between;
-}
 
 .nav-toggle {
     display: none;
@@ -107,7 +104,7 @@ nav a:hover::after {
     animation: fadeIn 1.2s ease-in;
 }
 
-@keyframes fadeIn {
+@keyframes slideIntro {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -124,6 +121,7 @@ nav a:hover::after {
     align-items: stretch;
     gap: 1.5rem;
     padding: 4rem 2rem;
+    background-color: #000000;
 }
 
 .preview-card{
@@ -133,7 +131,23 @@ nav a:hover::after {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.preview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/*.preview-card:hover {
+    animation: wobble 0.4s ease;
+}
+
+@keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+}*/
 
 .preview-card a{
     display: inline-block;
@@ -147,9 +161,7 @@ nav a:hover::after {
     text-decoration: underline;
 }
 
-.preview{
-    background-color: #000000;
-}
+
 
 @media screen and (max-width:1024px) {
     .preview{
